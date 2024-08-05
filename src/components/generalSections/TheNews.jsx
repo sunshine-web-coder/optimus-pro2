@@ -6,7 +6,7 @@ export default function TheNews() {
   const featuredPosts = blogPosts.slice(0, 3);
 
   return (
-    <div className="pt-[100px]">
+    <div className="pt-[50px] sm:pt-[100px]">
       <div className="relative w-[100vw] flex flex-col items-center px-0 sm:px-10">
         <img src="/blog.png" alt="" className="absolute sm:top-[-90px] w-[100%] h-full md:h-[950px] z-10" />
         <div className="text-white font-['AdventPro-Bold'] text-5xl z-[9999999] mt-[60px]">Blog</div>
