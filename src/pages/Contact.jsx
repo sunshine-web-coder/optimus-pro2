@@ -1,4 +1,3 @@
-import React from "react";
 import ContactUs from "../components/Contact/ContactUs";
 import ContactForm from "../components/Contact/ContactForm";
 import FollowUs from "../components/Contact/FollowUs";

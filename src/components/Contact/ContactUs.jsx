@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function ContactUs() {
   const loopOver = [
@@ -32,19 +31,19 @@ export default function ContactUs() {
   return (
     <div className="flex justify-center items-center flex-col pt-36">
       {/** heading */}
-      <div className="w-[100%] flex flex-col items-center justify-center">
-        <div className="mt-6 text-5xl font-bold text-center leading-[70.08px] max-md:max-w-full max-md:text-4xl font-boxed text-[#FFF]">
+      <div className="w-[100%] px-4 flex flex-col gap-[9px] items-center justify-center">
+        <div className="mt-6 boxed_round_fonts text-center max-md:max-w-full text-[#FFF]">
           {" "}
-          Contact <span className="text-[#0084FE]">Us</span>
+          Contact <span className="gradient-text">Us</span>
         </div>
-        <div className="text-sm md:text-lg text-center text-white w-[100%] md:w-[50%]">
+        <div className="sub-heading text-center text-white mx-auto max-w-[700px]">
           We’d love to hear from you! Whether you have questions, feedback, or
           need support, our team is here to help
         </div>
       </div>
       {/** content */}
       <div className="flex flex-col gap-5 w-[100%] px-4 md:px-7 mt-20">
-        <div className="text-[#FFF] text-sm md:text-lg text-center mb-6 font-bold font-quan">
+        <div className="text-[#FFF] body-text text-center mb-6 font-bold">
           Get in Touch with Our Team
         </div>
         {/** picture and */}
@@ -60,8 +59,8 @@ export default function ContactUs() {
               >
                 <img src={data.icons} alt="" />
                 <div className="">
-                  <div className="text-white font-semibold">{data.header}:</div>
-                  <div className="text-white text-sm md:text-base">
+                  <div className="text-white body-text">{data.header}:</div>
+                  <div className="text-white body-text !text-xl">
                     {data.sub}
                   </div>
                 </div>

@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function ContactForm() {
   return (
@@ -10,19 +9,19 @@ export default function ContactForm() {
 
       <div className="bg-[#FFFFFF] bg-opacity-[12%] flex flex-col items-center justify-center gap-8 rounded-3xl w-[100%] md:w-[80%] z-10">
         {/** heading */}
-        <div className="w-[100%] flex flex-col items-center justify-center">
-          <div className="mt-6 text-5xl font-bold text-center leading-[70.08px] max-md:max-w-full max-md:text-4xl font-boxed text-[#FFF]">
-            Contact <span className="text-[#0084FE]">Form</span>
+        <div className="w-[100%] px-4 flex flex-col gap-[9px] items-center justify-center">
+          <div className="mt-6 boxed_round_fonts text-center max-md:max-w-full text-[#FFF]">
+            Contact <span className="gradient-text">Form</span>
           </div>
-          <div className="text-sm md:text-lg text-center text-white w-[100%] md:w-[50%]">
+          <div className="sub-heading text-center text-white w-[100%] md:w-[60%]">
             Fill out the form below, and we’ll get back to you as soon as
             possible:
           </div>
         </div>
         {/** content inputs */}
-        <div className="flex flex-col w-[100%] px-2 md:px-20 pb-20 gap-7 mt-7 md:mt-10">
+        <form className="flex flex-col w-[100%] px-2 md:px-20 pb-20 gap-7 mt-7 md:mt-10">
           {/** input one*/}
-          <div className="bg-[#212121] bg-opacity-[100%] rounded-full p-3 flex items-center gap-1">
+          <div className="bg-[#212121] bg-opacity-[100%] rounded-full p-3 px-4 flex items-center gap-2">
             <img src="/avataricon.png" className="h-6" alt="" />
             <input
               type="text"
@@ -31,7 +30,7 @@ export default function ContactForm() {
             />
           </div>
           {/** input two */}
-          <div className="bg-[#212121] bg-opacity-[100%] rounded-full p-3 flex items-center gap-1">
+          <div className="bg-[#212121] bg-opacity-[100%] rounded-full p-3 px-4 flex items-center gap-2">
             <img src="/contactemailicon.png" className="h-5" alt="" />
             <input
               type="text"
@@ -40,7 +39,7 @@ export default function ContactForm() {
             />
           </div>
           {/** input three */}
-          <div className="bg-[#212121] bg-opacity-[100%] rounded-full p-3 flex gap-1">
+          <div className="bg-[#212121] bg-opacity-[100%] rounded-full p-3 px-4 flex items-center gap-2">
             <img src="/subjectemail.png" className="h-7" alt="" />
             <input
               type="text"
@@ -54,10 +53,13 @@ export default function ContactForm() {
               placeholder="Your Message"
               name=""
               id=""
-              className="text-white text-start bg-transparent outline-none border-none w-[100%] h-32 p-2"
+              className="text-white resize-none text-start bg-transparent outline-none border-none w-[100%] h-32 p-3 px-4"
             ></textarea>
           </div>
-        </div>
+          <div className="flex items-center justify-center">
+            <button className="gradient-background text-center rounded-[10px] text-white p-3 px-5">Send Message</button>
+          </div>
+        </form>
       </div>
     </div>
   );
