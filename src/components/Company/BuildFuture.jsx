@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function BuildFuture() {
   return (
-    <div className="py-[40px] sm:py-[0px] relative overflow-hidden mt-14">
+    <div className="py-[40px] sm:py-[0px] relative overflow-hidden">
       <div className="w-full min-h-[270px] sm:min-h-[434px] flex flex-col items-center justify-center px-4 sm:px-5 relative overflow-hidden">
         <div className="w-[604.93px] h-[729.03px] absolute left-[20%] top-0 origin-top-left rotate-[-75deg] bg-gradient-to-br from-[#006DD9] to-[#006DD9]-[23%] rounded-[100px] blur-[240px]" />
         <div className="w-[681.47px] h-[832.37px] absolute right-0 top-0 origin-top-left rotate-[-75deg] bg-sky-600/25 rounded-[100px] blur-[240px]" />

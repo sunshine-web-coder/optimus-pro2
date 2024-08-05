@@ -43,8 +43,13 @@ const data = [
 
 export default function OurCoreValues() {
   return (
-    <div className="w-full px-4 min-h-[811px] py-[50px] md:py-[30px]">
-      <div className="custom-container">
+    <div className="w-full relative overflow-hidden px-4 min-h-[811px] py-[50px] md:py-[30px]">
+      <div className="w-[530.69px] h-[648.20px] absolute top-0 -left-[120%] sm:-left-[30%] rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+      <div className="w-[530.69px] h-[648.20px] absolute top-0 -right-[90%] sm:-right-[30%] rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+      <div className="w-[530.69px] h-[648.20px] absolute bottom-[10%] -right-[70%] rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+      <div className="w-[530.69px] h-[648.20px] absolute -bottom-[30%] -right-[70%] rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+
+      <div className="custom-container relative z-10">
         <div className="">
           <h3 className="gradient-text boxed_round_fonts text-center mb-6">Our Core Values</h3>
           <p className="text-white text-center sub-heading">

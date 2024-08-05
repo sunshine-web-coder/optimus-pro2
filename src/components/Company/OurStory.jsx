@@ -1,7 +1,10 @@
 export default function OurStory() {
   return (
-    <div className="w-full px-4 min-h-[811px] py-[50px] md:py-[100px]">
-      <div className="custom-container">
+    <div className="w-full relative overflow-hidden px-4 min-h-[811px] py-[50px] md:py-[100px]">
+      <div className="w-[379px] h-[463px] absolute top-[5%] md:top-[20%] -left-[50%] sm:left-0 bg-[#006dd9]/20 rounded-[100px] blur-[100px]" />
+      <div className="w-[379px] h-[463px] absolute -bottom-[25%] right-0 bg-[#006dd9]/10 rounded-[100px] blur-[100px]" />
+      <div className="w-[379px] h-[463px] absolute -bottom-[35%] left-0 bg-[#006dd9]/10 rounded-[100px] blur-[100px]" />
+      <div className="custom-container relative z-10">
         <div className="">
           <h3 className="gradient-text boxed_round_fonts text-center mb-6">Our Story</h3>
           <p className="text-white text-center sub-heading">A group of blockchain visionaries, bound by shared passion and unwavering vision, coming from humble beginnings to build a dynamic community that's shaping the future of the internet.uture</p>
