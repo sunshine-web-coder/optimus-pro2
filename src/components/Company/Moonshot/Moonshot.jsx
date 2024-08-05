@@ -35,7 +35,7 @@ export default function Moonshot() {
             {/* Render the rocket image in the middle */}
             <div className="flex w-[2315px] lg:w-[400px] flex-col items-center justify-center">
               <img src="/moonshot/singularrocket.png" alt="Rocket" className="w-full h-full hidden lg:block" />
-              <img src="/moonshot/horizontalrocket.png" alt="Rocket" className="w-full h-[150px] block lg:hidden" />
+              <img src="/moonshot/horizontalrocket.png" alt="Rocket" className="w-full h-[250px] block lg:hidden" />
             </div>
 
             <div className="w-full flex flex-row lg:flex-col gap-[39px] lg:pt-[80px]">
