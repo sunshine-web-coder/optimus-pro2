@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { FaCheck } from 'react-icons/fa';
-import { FaCircleCheck } from 'react-icons/fa6';
+// import { FaCircleCheck } from 'react-icons/fa6';
 import { roadmapData } from './moonshotData';
 
 export default function Moonshot() {
@@ -76,11 +76,11 @@ export default function Moonshot() {
                     </div>
                     <h4 className="font-bold text-center !text-lg boxed_round_fonts text-white mb-2">{phase.title}</h4>
                     <div className="flex items-center justify-center">
-                      <ul className="flex flex-col md:gap-[11px] text-sm mt-4">
+                      <ul className="list-disc pl-5 text-white flex flex-col gap-1 mt-2">
                         {phase.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-gray-300 flex items-center gap-2 !text-[14px] boxed_round_fonts">
-                            <FaCircleCheck className="text-xs" />
-                            {item}
+                          <li key={itemIndex} className="text-gray-300 gap-2 !text-[14px] boxed_round_fonts">
+                            {/* <FaCircleCheck className="text-xs" /> */}
+                            <span className='leading-[20px]'>{item}</span>
                           </li>
                         ))}
                       </ul>
