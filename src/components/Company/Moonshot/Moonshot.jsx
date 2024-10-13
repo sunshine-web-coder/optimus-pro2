@@ -91,11 +91,12 @@ export default function Moonshot() {
             )}
             <div {...handlers} ref={scrollRef} className="flex overflow-x-auto scrollbar-hide touch-pan-x" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               {roadmapData.map((phase, index) => (
-                <div key={index} className="flex-shrink-0 w-64 md:w-80 mr-8 last:mr-0">
+                <div key={index} className="flex-shrink-0 relative w-64 md:w-80 mr-8 last:mr-0">
                   <div className="relative flex flex-col items-center justify-center">
+                    {phase.phase == 'Done' && <div className="absolute top-[50px] gradient-background w-full h-1 rounded" />}
                     <h3 className="gradient-text !text-2xl boxed_round_fonts text-center mb-8">{phase.phase}</h3>
-                    <div className={`relative top-[-20px] flex items-center justify-center text-lg gradient-background rounded-full ${phase.phase == "Done" ? "w-5 h-5 top-[-22px]" : "w-4 h-4"}`}>
-                      {phase.phase == "Done" ? <FaCheck className='text-xs text-white' /> : ""}                      
+                    <div className={`relative top-[-20px] flex items-center justify-center text-lg gradient-background rounded-full ${phase.phase == 'Done' ? 'w-5 h-5 top-[-22px]' : 'w-4 h-4'}`}>
+                      {phase.phase == 'Done' ? <FaCheck className="text-xs text-white" /> : ''}
                     </div>
                     <h4 className="font-bold text-center !text-lg boxed_round_fonts text-white mb-2">{phase.title}</h4>
                     <div className="flex items-center justify-center">
