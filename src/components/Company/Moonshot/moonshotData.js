@@ -27,44 +27,44 @@ export const roadmapData = [
   {
     phase: '2025',
     title: 'Human Infrastructures Launch',
-    items: ['Launch Optimus PRO Academy', 'Launch PROteam', 'Onboard talents to build Optimus PRO']
+    items: ['Optimus PRO Launchpad', 'Optimus PRO Ai', 'Optimus PRO $Token']
   },
-  {
-    phase: '2026',
-    title: 'Tech Infrastructures Launch',
-    items: ['Launch Optimus Chain/mainnet', 'Launch Alpha Phase 0', 'Token Launch']
-  },
-  {
-    phase: '2027',
-    title: 'Growth - Establish Other Aims',
-    items: ['Wallet connect', 'Metamask', 'Rug pull protection', 'Path finder screener']
-  },
-  {
-    phase: '2028',
-    title: 'Expansion',
-    items: ['Expand our ecosystem through new use cases and applications', 'Incentivize Developers and Builders to the Optimus PRO ecosystem', 'Develop and implement scaling solutions']
-  },
-  {
-    phase: '2029',
-    title: 'Maturity',
-    items: [
-      'Achieve a mature and stable ecosystem with diverse use cases',
-      'Continuously improve products and services to stay relevant',
-      'Continuous research and innovation of new solutions and applications'
-    ]
-  },
-  {
-    phase: '2030',
-    title: 'Global Reach',
-    items: ['Establish a global presence and community', 'Collaborate with governments, institutions, and traditional industries', 'Drive adoption and mainstream acceptance']
-  },
-  {
-    phase: '2031 & Beyond',
-    title: 'LEADERSHIP',
-    items: [
-      'Establish the Optimus PRO ecosystem as a leading brand in the web3 space',
-      'Drive innovation and development in the decentralized space',
-      'Create a lasting legacy and impact on the future of the internet'
-    ]
-  }
+//   {
+//     phase: '2026',
+//     title: 'Tech Infrastructures Launch',
+//     items: ['Launch Optimus Chain/mainnet', 'Launch Alpha Phase 0', 'Token Launch']
+//   },
+//   {
+//     phase: '2027',
+//     title: 'Growth - Establish Other Aims',
+//     items: ['Wallet connect', 'Metamask', 'Rug pull protection', 'Path finder screener']
+//   },
+//   {
+//     phase: '2028',
+//     title: 'Expansion',
+//     items: ['Expand our ecosystem through new use cases and applications', 'Incentivize Developers and Builders to the Optimus PRO ecosystem', 'Develop and implement scaling solutions']
+//   },
+//   {
+//     phase: '2029',
+//     title: 'Maturity',
+//     items: [
+//       'Achieve a mature and stable ecosystem with diverse use cases',
+//       'Continuously improve products and services to stay relevant',
+//       'Continuous research and innovation of new solutions and applications'
+//     ]
+//   },
+//   {
+//     phase: '2030',
+//     title: 'Global Reach',
+//     items: ['Establish a global presence and community', 'Collaborate with governments, institutions, and traditional industries', 'Drive adoption and mainstream acceptance']
+//   },
+//   {
+//     phase: '2031 & Beyond',
+//     title: 'LEADERSHIP',
+//     items: [
+//       'Establish the Optimus PRO ecosystem as a leading brand in the web3 space',
+//       'Drive innovation and development in the decentralized space',
+//       'Create a lasting legacy and impact on the future of the internet'
+//     ]
+//   }
 ];
