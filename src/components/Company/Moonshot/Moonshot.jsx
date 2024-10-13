@@ -1,9 +1,9 @@
-import { leftRoadmapItems, rightRoadmapItems } from './data';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { IoBagHandleSharp, IoSchool } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
 
 export default function Moonshot() {
-  // Split the roadmap items into two halves
-  // const firstHalf = roadmapItems.slice(0, Math.ceil(roadmapItems.length / 2));
-  // const secondHalf = roadmapItems.slice(Math.ceil(roadmapItems.length / 2));
 
   return (
     <div className="w-full relative overflow-hidden px-4 min-h-[811px] py-[50px] md:py-[30px]">
@@ -17,55 +17,58 @@ export default function Moonshot() {
           <h3 className="gradient-text boxed_round_fonts text-center mb-6">Moonshot</h3>
           <p className="text-white text-center sub-heading">Unveiling our ambitious roadmap towards groundbreaking solutions that will revolutionize the Web3 ecosystem.</p>
         </div>
-        <div className="w-full overflow-auto mt-[65px] flex flex-col items-center">
-          {/* Render the roadmap items and the rocket image */}
-          <div className="flex flex-col lg:flex-row w-full">
-            <div className="w-full flex flex-row lg:flex-col gap-[39px]">
-              {leftRoadmapItems.map((item, index) => (
-                <div key={index} className="flex flex-col lg:flex-row w-full !text-xl body-text gap-4 items-center justify-between">
-                  <div
-                    className={`w-[353px] h-full rounded-2xl border border-white/30 px-2.5 pt-2 pb-1.5 
-                    ${item.isBlur ? 'blur-sm bg-[#006dd9]/30' : 'bg-[#006dd9]/30'}`}
-                  >
-                    <h4 className="text-white uppercase font-bold">{item.title}</h4>
-                    <ul className="list-disc leading-6 pl-5 text-white">
-                      {item.points.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <span className="text-white whitespace-nowrap">{item.year}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Render the rocket image in the middle */}
-            <div className="flex w-[2315px] lg:w-[400px] flex-col items-center justify-center">
-              <img src="/moonshot/singularrocket.png" alt="Rocket" className="w-full h-full hidden lg:block" />
-              <img src="/moonshot/horizontalrocket.png" alt="Rocket" className="w-full h-[150px] block lg:hidden" />
-            </div>
-
-            <div className="w-full flex flex-row lg:flex-col gap-[39px] lg:pt-[80px]">
-              {rightRoadmapItems.map((item, index) => (
-                <div key={index} className="flex flex-col-reverse lg:flex-row-reverse !text-xl body-text w-full gap-4 items-center justify-between">
-                  <div
-                    className={`w-[353px] h-full rounded-2xl border border-white/30 px-2.5 pt-2 pb-1.5 
-                    ${item.isBlur ? 'blur-sm bg-[#006dd9]/30' : 'bg-[#006dd9]/30'}`}
-                  >
-                    <h4 className="text-white uppercase font-bold">{item.title}</h4>
-                    <ul className="list-disc pl-5 text-white">
-                      {item.points.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <span className="text-white whitespace-nowrap">{item.year}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date={<span className='timelineDate'>2011 - present</span>}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<IoBagHandleSharp />}
+          >
+            <h3 className="vertical-timeline-element-title">Creative Director</h3>
+            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+            <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement className="vertical-timeline-element--work" 
+          date={<span className='timelineDate'>2010 - 2011</span>} 
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} icon={<IoBagHandleSharp />}>
+            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement className="vertical-timeline-element--work" date={<span className='timelineDate'>2008 - 2010</span>} iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} icon={<IoBagHandleSharp />}>
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+            <p>User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement className="vertical-timeline-element--work" date={<span className='timelineDate'>2006 - 2008</span>} iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} icon={<IoBagHandleSharp />}>
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <p>User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement className="vertical-timeline-element--education" date={<span className='timelineDate'>April 2013</span>} iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }} icon={<IoSchool />}>
+            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
+            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+            <p>Strategy, Social Media</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement className="vertical-timeline-element--education" date={<span className='timelineDate'>November 2012</span>} iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }} icon={<IoSchool />}>
+            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
+            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+            <p>Creative Direction, User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement className="vertical-timeline-element--education" date={<span className='timelineDate'>2002 - 2006</span>} iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }} icon={<IoSchool />}>
+            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+            <p>Creative Direction, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} icon={<FaStar />} />
+        </VerticalTimeline>
       </div>
+      <div className="w-[530.69px] h-[648.20px] absolute top-[20%] -left-[50%] sm:left-0 rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+      <div className="w-[530.69px] h-[648.20px] absolute top-[20%] -right-[120%] sm:-right-[20%] rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+      <div className="w-[530.69px] h-[648.20px] absolute bottom-[10%] -left-[50%] sm:left-0 rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
+      <div className="w-[530.69px] h-[648.20px] absolute bottom-[10%] -right-[10%] sm:-right-[20%] rotate-[-75deg] bg-[#006dd9]/20 rounded-[100px] blur-[240px]" />
     </div>
   );
 }

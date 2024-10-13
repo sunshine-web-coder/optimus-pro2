@@ -173,3 +173,13 @@ body, html {
   pointer-events: none;
   box-sizing: border-box;
 }
+
+.timelineDate{
+  color: white;
+}
+
+@media screen and (max-width: 1169px) {
+  .timelineDate{
+    color: black;
+  }
+}
