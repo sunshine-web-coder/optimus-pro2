@@ -26,7 +26,7 @@ export default function Moonshot() {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = direction === 'left' ? -300 : 300; // Increased scroll amount for faster scrolling
+      const scrollAmount = direction === 'left' ? -400 : 400; // Increased scroll amount for faster scrolling
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
@@ -34,7 +34,7 @@ export default function Moonshot() {
   const handlers = useSwipeable({
     onSwipedLeft: () => scroll('right'),
     onSwipedRight: () => scroll('left'),
-    delta: 50, // Adjust the swipe threshold for faster response
+    delta: 100, // Adjust the swipe threshold for faster response
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
