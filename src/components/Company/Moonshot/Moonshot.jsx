@@ -24,7 +24,7 @@ export default function Moonshot() {
     return () => currentRef.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scroll = (direction) => {
+  const scroll = direction => {
     if (scrollRef.current) {
       const scrollAmount = direction === 'left' ? -400 : 400; // Increased scroll amount for faster scrolling
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
@@ -36,7 +36,7 @@ export default function Moonshot() {
     onSwipedRight: () => scroll('left'),
     delta: 100, // Adjust the swipe threshold for faster response
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
+    trackMouse: true
   });
 
   return (
@@ -52,8 +52,8 @@ export default function Moonshot() {
           <h3 className="gradient-text boxed_round_fonts text-center mb-6">Moonshot</h3>
           <p className="text-white text-center sub-heading">Unveiling our ambitious roadmap towards groundbreaking solutions that will revolutionize the Web3 ecosystem.</p>
         </div>
-        <div className="relative mt-7">
-          <div className="absolute top-[51px] left-0 right-0 h-0.5 gradient-background"></div>
+        <div className="relative mt-7 border-t-2 border-b-2 py-10">
+          <div className="absolute top-[90px] left-0 right-0 h-0.5 gradient-background" />
           <div className="relative overflow-x-hidden">
             {showLeftArrow && (
               <button onClick={() => scroll('left')} className="absolute left-0 top-[15%] md:top-[25%] flex items-center justify-center z-10 gradient-background text-white rounded-full p-2 px-[13px]">
@@ -74,16 +74,18 @@ export default function Moonshot() {
                     <div className={`relative top-[-20px] flex items-center justify-center text-lg gradient-background rounded-full ${phase.phase === 'Done' ? 'w-5 h-5 top-[-22px]' : 'w-4 h-4'}`}>
                       {phase.phase === 'Done' ? <FaCheck className="text-xs text-white" /> : ''}
                     </div>
-                    <h4 className="font-bold text-center !text-lg boxed_round_fonts text-white mb-2">{phase.title}</h4>
-                    <div className="flex items-center justify-center">
-                      <ul className="list-disc pl-5 text-white flex flex-col gap-1 mt-2">
-                        {phase.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-gray-300 mb-2 !leading-[24px] !text-[15px] boxed_round_fonts">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {/* <div className='border p-2 rounded-[8px] bg-red-500'> */}
+                      <h4 className="font-bold text-center !text-lg boxed_round_fonts text-white mb-2">{phase.title}</h4>
+                      <div className="flex items-center justify-center">
+                        <ul className="list-disc pl-5 text-white flex flex-col gap-1 mt-2">
+                          {phase.items.map((item, itemIndex) => (
+                            <li key={itemIndex} className="text-gray-300 mb-2 !leading-[24px] !text-[15px] boxed_round_fonts">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    {/* </div> */}
                   </div>
                 </div>
               ))}
