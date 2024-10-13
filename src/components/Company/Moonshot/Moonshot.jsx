@@ -78,9 +78,8 @@ export default function Moonshot() {
                     <div className="flex items-center justify-center">
                       <ul className="list-disc pl-5 text-white flex flex-col gap-1 mt-2">
                         {phase.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-gray-300 gap-2 !text-[14px] boxed_round_fonts">
-                            {/* <FaCircleCheck className="text-xs" /> */}
-                            <span className='leading-[20px]'>{item}</span>
+                          <li key={itemIndex} className="text-gray-300 mb-2 !leading-[24px] !text-[14px] boxed_round_fonts">
+                            {item}
                           </li>
                         ))}
                       </ul>
