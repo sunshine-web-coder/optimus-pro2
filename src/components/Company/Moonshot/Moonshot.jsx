@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { FaCheck } from 'react-icons/fa';
+import { FaCircleCheck } from 'react-icons/fa6';
 
 const roadmapData = [
   {
@@ -100,9 +101,10 @@ export default function Moonshot() {
                     </div>
                     <h4 className="font-bold text-center !text-lg boxed_round_fonts text-white mb-2">{phase.title}</h4>
                     <div className="flex items-center justify-center">
-                      <ul className="list-disc flex flex-col md:gap-2 list-inside text-sm mt-4">
+                      <ul className="flex flex-col md:gap-[11px] text-sm mt-4">
                         {phase.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-gray-300 !text-[14px] boxed_round_fonts">
+                          <li key={itemIndex} className="text-gray-300 flex items-center gap-2 !text-[14px] boxed_round_fonts">
+                            <FaCircleCheck />
                             {item}
                           </li>
                         ))}
