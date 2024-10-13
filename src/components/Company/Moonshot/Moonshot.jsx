@@ -104,7 +104,7 @@ export default function Moonshot() {
                       <ul className="flex flex-col md:gap-[11px] text-sm mt-4">
                         {phase.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="text-gray-300 flex items-center gap-2 !text-[14px] boxed_round_fonts">
-                            <FaCircleCheck />
+                            <FaCircleCheck className='text-xs' />
                             {item}
                           </li>
                         ))}
