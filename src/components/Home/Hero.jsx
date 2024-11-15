@@ -23,7 +23,10 @@ export default function Hero() {
           </span>
         </div>
         <div className="max-w-[585px]">
-          <span className="text-white sub-heading">Join Us- the <b>Crazy Ones</b> - the <b>Optimists</b>, the <b>Misfits</b>, the <b>Underdogs</b> and the Rebels -as we build ideas that are redefining the Web3 ecosystem.</span>
+          <span className="text-white sub-heading">
+            Join us- the <b>Crazy Ones,</b> the <b>Optimists</b>, the <b>Misfits</b>, the <b>Underdogs</b> and the Rebels, and together let's push the <b>boundaries</b> of Web3 with{' '}
+            <b>bold, groundbreaking ideas.</b>
+          </span>
         </div>
       </div>
       {/** */}

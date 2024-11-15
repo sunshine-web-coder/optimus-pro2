@@ -7,13 +7,13 @@ export default function Community() {
       <div className="blur-[120px] rounded-[100px] bg-[rgba(0,109,217,0.21)] rotate-[-75deg] absolute right-[196.5px] bottom-[-90.7px] w-[980.4px] h-[837.7px]"></div>
       <div className="flex justify-center relative z-10 items-center w-full md:px-5 max-md:max-w-full">
         <div className="flex flex-col items-center w-full max-w-[1188px] max-md:max-w-full">
-          <div className="text-xl md:text-5xl leading-[48px] font-bold text-white bg-clip-text bg-[linear-gradient(120deg,#0080FF_56.64%,#00D9D9_76.56%)] max-md:max-w-full max-md:text-4xl font-boxed text-center">
-            A Startup for{' '}
+          <div className="text-xl uppercase md:text-5xl leading-[48px] font-bold text-white bg-clip-text bg-[linear-gradient(120deg,#0080FF_56.64%,#00D9D9_76.56%)] max-md:max-w-full max-md:text-4xl font-boxed text-center">
+            A Startup by{' '}
             <span className="gradient-text relative leading-[58px]">
-              Community
+              Community,
               <div className="gradient-background absolute left-[3px] leading-[58px] -bottom-1 sm:-bottom-2 w-[100%] h-[4px]"></div>
             </span>{' '}
-            by Community
+            for Community
           </div>
           <div className="mt-12 sub-heading text-center text-white max-md:mt-10 max-w-[1031px]">
             Optimus PRO is building a community-driven Web3 ecosystem that prioritizes trust, security,
