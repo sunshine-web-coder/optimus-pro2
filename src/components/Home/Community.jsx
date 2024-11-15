@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Modal from '../modals/Modal';
+import LetBuildForm from '../forms/LetBuildForm';
 
 export default function Community() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to open and close the modal
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+
   return (
     <div className="px-4 lg:px-10 py-20 lg:py-0 flex flex-col justify-center items-center relative rounded-3xl">
       {/* Blur*/}
@@ -18,7 +27,8 @@ export default function Community() {
           <div className="mt-12 sub-heading text-center text-white max-md:mt-10 max-w-[1031px]">
             {/* Optimus PRO is building a community-driven Web3 ecosystem that prioritizes trust, security,
             <br /> and transparency. It’s a decentralized space co-built by stake<span className="circle-text">holders</span> like you, where everyone has a voice. */}
-            <b>Optimus PRO</b> is more than a startup - we're a <b>community-driven</b> collective of passionate individuals bound by a shared vision of a <b>fair</b>, <b>secure</b> and <b>transparent</b> Web3 ecosystem.
+            <b>Optimus PRO</b> is more than a startup - we're a <b>community-driven</b> collective of passionate individuals bound by a shared vision of a <b>fair</b>, <b>secure</b> and{' '}
+            <b>transparent</b> Web3 ecosystem.
           </div>
           <div className="self-stretch mt-9 max-md:max-w-full">
             <div className="flex gap-5 px-0 sm:px-7 md:px-0 max-md:flex-col max-md:gap-0">
@@ -42,9 +52,9 @@ export default function Community() {
                   <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">
                     Execute your ideas with different stacks of infrastructures, expert mentorship, funding and a collaborative community
                   </div>
-                  <Link
-                    to=""
+                  <button
                     className="flex items-center !text-xl body-text justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
+                    onClick={handleOpenModal}
                   >
                     <span>Let’s Build</span>
                     <img
@@ -52,7 +62,7 @@ export default function Community() {
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&"
                       className="shrink-0 self-start w-4 aspect-square"
                     />
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-full max-md:ml-0">
@@ -112,6 +122,9 @@ export default function Community() {
           </div>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        <LetBuildForm />
+      </Modal>
     </div>
   );
 }

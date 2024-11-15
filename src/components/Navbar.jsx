@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <div
-      className="fixed top-[50px] md:top-14 left-[50%] translate-x-[-50%] translate-y-[-50%] w-full md:max-w-[58.75rem] xl:max-w-[68.75rem] md:h-[82px] rounded-[65px] backdrop-blur-[73px] bg-white bg-opacity-[4%] border-g text-sm md:text-base flex justify-between items-center gap-4 py-2 px-7 z-[9999999] text-[#FFFFFF]"
+      className="fixed top-[50px] md:top-14 left-[50%] translate-x-[-50%] translate-y-[-50%] w-full md:max-w-[58.75rem] xl:max-w-[68.75rem] md:h-[82px] rounded-[65px] backdrop-blur-[73px] bg-white bg-opacity-[4%] border-g text-sm md:text-base flex justify-between items-center gap-4 py-2 px-7 z-50 text-[#FFFFFF]"
       style={{
         backgroundImage:
           'linear-gradient(to right, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 10.499999672174436%, rgba(255, 255, 255, 0.2) 25.999999046325666%, rgba(0, 0, 0, 0.2) 41.49999916553495%, rgba(0, 0, 0, 0.18) 55.000001192092874%, rgba(255, 255, 255, 0.11) 69.49999928474425%, rgba(0, 0, 0, 0.2) 85.00000238418578%, rgba(74, 74, 74, 0.2) 99.99999999999999%)'

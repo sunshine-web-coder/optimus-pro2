@@ -1,6 +1,6 @@
 export default function Numberspeak() {
   return (
-    <div className="flex flex-col min-h-[858px] sm:min-h-[1050px] md:min-h-min items-center relative text-center z-[999]">
+    <div className="flex flex-col min-h-[858px] sm:min-h-[1050px] md:min-h-min items-center relative text-center">
       {/* <div className="flex flex-col absolute right-20 w-[26%] max-md:ml-0 max-md:w-full">
       </div> */}
       <div className="shrink-0 absolute top-0 mx-auto max-w-full bg-slate-950 blur-[50px] h-[289px] rounded-[100px] w-[455px]" />
