@@ -16,8 +16,9 @@ export default function Community() {
             for Community
           </div>
           <div className="mt-12 sub-heading text-center text-white max-md:mt-10 max-w-[1031px]">
-            Optimus PRO is building a community-driven Web3 ecosystem that prioritizes trust, security,
-            <br /> and transparency. It’s a decentralized space co-built by stake<span className="circle-text">holders</span> like you, where everyone has a voice.
+            {/* Optimus PRO is building a community-driven Web3 ecosystem that prioritizes trust, security,
+            <br /> and transparency. It’s a decentralized space co-built by stake<span className="circle-text">holders</span> like you, where everyone has a voice. */}
+            <b>Optimus PRO</b> is more than a startup - we're a <b>community-driven</b> collective of passionate individuals bound by a shared vision of a <b>fair</b>, <b>secure</b> and <b>transparent</b> Web3 ecosystem.
           </div>
           <div className="self-stretch mt-9 max-md:max-w-full">
             <div className="flex gap-5 px-0 sm:px-7 md:px-0 max-md:flex-col max-md:gap-0">
@@ -38,10 +39,19 @@ export default function Community() {
                     className="aspect-[3.03] w-[90px]"
                   />
                   <div className="mt-4 font-bold body-text tracking-tighter leading-loose">Founders</div>
-                  <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">Execute your ideas with different stacks of infrastructures, expert mentorship, funding and a collaborative community</div>
-                  <Link to="" className="flex items-center !text-xl body-text justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max">
+                  <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">
+                    Execute your ideas with different stacks of infrastructures, expert mentorship, funding and a collaborative community
+                  </div>
+                  <Link
+                    to=""
+                    className="flex items-center !text-xl body-text justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
+                  >
                     <span>Let’s Build</span>
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&" className="shrink-0 self-start w-4 aspect-square" />
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&"
+                      className="shrink-0 self-start w-4 aspect-square"
+                    />
                   </Link>
                 </div>
               </div>
@@ -49,10 +59,19 @@ export default function Community() {
                 <div className="flex flex-col grow justify-center items-center md:items-start self-stretch p-10 mx-auto w-full text-white rounded-2xl border border-solid bg-[#0080FF] bg-opacity-20 border-white border-opacity-20 max-md:px-5 max-md:mt-6">
                   <img loading="lazy" srcSet="https://i.imgur.com/t2LKURb.png" className="aspect-[3.03] hid w-[90px]" />
                   <div className="mt-4 font-bold body-text tracking-tighter leading-loose text-zinc-300">Mentors</div>
-                  <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">Make a transformative impact with your expertise by guiding ambitious founders to achieve the impossible, and contribute to shaping the future of Web3.</div>
-                  <Link to="" className="flex items-center body-text !text-xl justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max">
+                  <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">
+                    Make a transformative impact with your expertise by guiding ambitious founders to achieve the impossible, and contribute to shaping the future of Web3.
+                  </div>
+                  <Link
+                    to=""
+                    className="flex items-center body-text !text-xl justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
+                  >
                     <span>Become a Mentor</span>
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&" className="shrink-0 self-start w-4 aspect-square" />
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&"
+                      className="shrink-0 self-start w-4 aspect-square"
+                    />
                   </Link>
                 </div>
               </div>
@@ -73,10 +92,19 @@ export default function Community() {
                     className="aspect-[3.03] w-[90px]"
                   />
                   <div className="mt-4 font-bold body-text tracking-tighter leading-loose">Funders</div>
-                  <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">Access exclusive early investment opportunities in Web3, discover and connect with high-potential 100X startups before everyone else.</div>
-                  <Link to="" className="flex items-center body-text !text-xl justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max">
+                  <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">
+                    Access exclusive early investment opportunities in Web3, discover and connect with high-potential 100X startups before everyone else.
+                  </div>
+                  <Link
+                    to=""
+                    className="flex items-center body-text !text-xl justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
+                  >
                     <span>I want in</span>
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&" className="shrink-0 self-start w-4 aspect-square" />
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&"
+                      className="shrink-0 self-start w-4 aspect-square"
+                    />
                   </Link>
                 </div>
               </div>
