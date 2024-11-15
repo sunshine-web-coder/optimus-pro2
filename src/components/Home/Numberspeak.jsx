@@ -30,7 +30,7 @@ export default function Numberspeak() {
               >
                 {/* one */}
                 <div className="flex flex-col items-center box-sizing-border mr-2">
-                  <div className="border-[1px_solid_#FFFFFF] m-[0_0_16px_0] inline-block break-words boxed_round_fonts font-normal !text-[36px] leading-[1.111] text-[#FFFFFF]">1k+</div>
+                  <div className="border-[1px_solid_#FFFFFF] m-[0_0_16px_0] inline-block break-words boxed_round_fonts font-normal !text-[36px] leading-[1.111] text-[#FFFFFF]">125+</div>
                   <span className="break-words body-text font-normal leading-[0.75] text-[#FFFFFF] whitespace-nowrap text-center">Co-builders</span>
                 </div>
                 {/* two */}

@@ -19,19 +19,19 @@ export default function CommunityProgram() {
           <h2 className="!text-3xl md:!text-4xl boxed_round_fonts font-bold mb-4">
             Community <span className="gradient-text">Programs</span>
           </h2>
-          <p className="sub-heading mb-4 ">Ready to be a Web3 pioneer? The Optimus PRO Faction offers a suite of programs designed to empower you.</p>
-          <p className="body-text mb-4">Optimus PRO Community Programs are crafted with you in mind. We believe collaboration within our community is essential to drive innovation, adoption, and growth in Web3.</p>
-          <p className="body-text mb-4">Our programs are specifically designed with the goal of encouraging collaboration in the Optimus PRO Ecosystem and to provide opportunities for learning, growth, and networking.</p>
-          <p className="text-white body-text leading-7">Get involved in the right program for you:</p>
-          <ul className="ml-3 list-disc body-text list-inside">
-            <li>Ambassador Program</li>
-            <li>Builders Quest</li>
-            <li>Community Contests</li>
-            <li>Forge</li>
-            <li>The Galactics</li>
-            <li>Learn & Earn</li>
+          <p className="sub-heading mb-4 ">Ready to be a Web3 pioneer? Optimus PRO offers a suite of programs designed to empower you.</p>
+          <p className="body-text mb-4">Optimus PRO Community Programs are crafted with you in mind. We believe collaboration in our community is essential to drive innovation, adoption, and growth in Web3.</p>
+          <p className="body-text mb-4">Our programs are specifically designed with the goal of encouraging collaboration in the Optimus PRO Ecosystem and to provide opportunities for learning, growth, earning and networking.</p>
+          <p className="text-white body-text leading-7">Join the right program for you:</p>
+          <ul className="ml-3 mb-3 flex flex-col gap-3 list-disc body-text list-inside">
+            <li><b>Ambassador Program:</b> Represent and promote Optimus PRO, amplify our impact.</li>
+            <li><b>Builders Quest:</b> Collaborate in building community-driven projects and share the rewards.</li>
+            <li><b>Community Contests:</b> participate in friendly competitions within the community, win exciting prizes and gain recognition.</li>
+            <li><b>Forge:</b> For passionate founders who desire to transform their ideas into digital innovation.</li>
+            <li><b>The Galactics:</b> Work directly with the Optimus PRO team to shape the future.</li>
+            <li><b>Learn & Earn:</b> Get rewards for completing educational contents and developing new skills.</li>
           </ul>
-          <p className="body-text mb-4">And seize the opportunity to learn, collaborate, build, and thrive together in the ever-evolving Web3 landscape.</p>
+          {/* <p className="body-text mb-4">And seize the opportunity to learn, collaborate, build, and thrive together in the ever-evolving Web3 landscape.</p> */}
           <p className="body-text mb-4">Ready to Dive in?</p>
           <Link to="" className={`h-[54px] max-w-max gradient-background rounded-[50px] text-[white] cursor-pointer transition-[background-color] duration-[0.3s] flex items-center justify-center gap-2 tracking-[-0.3px] leading-[23.25px] font-medium text-[15px] px-5 py-2.5 mt-4`}>
             <span className="text-white whitespace-nowrap !text-xl body-text">Explore our programs</span>

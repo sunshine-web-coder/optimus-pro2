@@ -39,7 +39,7 @@ export default function Testimony() {
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col text-xl leading-6 text-white max-md:mt-7 relative">
-                <img loading="lazy" srcSet="https://i.imgur.com/zKzurWb.png" className="self-center aspect-square rounded-full w-[50px] absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[-3]" />
+                <img loading="lazy" srcSet="https://i.imgur.com/iuittMi.png" className="self-center aspect-square rounded-full w-[50px] absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[-3]" />
                 <div className="justify-center px-8 py-10 rounded-2xl bg-[#0080FF] bg-opacity-[25%] max-md:px-5 font-light text-xl text-start leading-6 body-text">
                   Never doubt a group of people who believe they can change the world and are collectively building towards that. Optimus PRO is that team, watch out for them in this space.
                   <br />
@@ -51,7 +51,7 @@ export default function Testimony() {
       </div>
       <div className="text-white flex flex-col justify-center items-center mt-14">
         <div className="boxed_round_fonts sm:leading-[60px] md:leading-[70px] text-center text-white max-md:max-w-full">
-          Build the future with <span className="gradient-text">Optimus PRO</span>
+          Build the Future with <span className="gradient-text">Optimus PRO</span>
         </div>
         <div className="mt-2 text-base sub-heading leading-6 text-white max-md:max-w-full">Ready to be part of our passionate and ambitious team? Apply now.</div>
         {/* Button */}
