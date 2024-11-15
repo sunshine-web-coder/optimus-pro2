@@ -10,22 +10,22 @@ export default function LetBuildForm() {
       <form className="space-y-2">
         <div className="relative flex flex-col gap-1">
           <label className="block text-gray-700">Email</label>
-          <MdEmail className="w-[18px] h-[18px] absolute top-[40px] left-[10px]" />
-          <input type="email" placeholder="Enter email address" className="w-full pl-10 px-3 py-2 border rounded-full focus:outline-none focus:ring focus:border-blue-300" />
+          <MdEmail className="w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px]" />
+          <input type="email" placeholder="Enter email address" className="w-full pl-10 px-3 py-2 border bg-[#dadada] text-gray-700 rounded-full focus:outline-none focus:ring focus:border-blue-300" />
         </div>
 
         {/* Telegram Username Field */}
         <div className="relative flex flex-col gap-1">
           <label className="block text-gray-700">Telegram Username</label>
-          <FaTelegram className="w-[18px] h-[18px] absolute top-[40px] left-[10px]" />
-          <input type="text" placeholder="Enter telegram username" className="w-full pl-10 px-3 py-2 border rounded-full focus:outline-none focus:ring focus:border-blue-300" />
+          <FaTelegram className="w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px]" />
+          <input type="text" placeholder="Enter telegram username" className="w-full pl-10 px-3 py-2 border bg-[#dadada] rounded-full focus:outline-none focus:ring focus:border-blue-300" />
         </div>
 
         {/* LinkedIn Profile Field */}
         <div className="relative flex flex-col gap-1">
           <label className="block text-gray-700">LinkedIn Profile</label>
-          <FaLinkedinIn className="w-[18px] h-[18px] absolute top-[40px] left-[10px]" />
-          <input type="url" placeholder="Enter linkedin profile" className="w-full pl-10 px-3 py-2 border rounded-full focus:outline-none focus:ring focus:border-blue-300" />
+          <FaLinkedinIn className="w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px]" />
+          <input type="url" placeholder="Enter linkedin profile" className="w-full pl-10 px-3 py-2 border bg-[#dadada] rounded-full focus:outline-none focus:ring focus:border-blue-300" />
         </div>
         <div className="w-full pt-5">
           <button type="submit" className="w-full text-lg px-4 py-3 gradient-background text-white rounded-full">
