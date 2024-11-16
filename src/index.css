@@ -125,6 +125,10 @@ body, html {
     linear-gradient(90deg, rgba(0, 0, 0, 0.651) 10.5%, rgba(255, 255, 255, 0.651) 26%, rgba(0, 0, 0, 0.651) 41.5%, rgba(0, 0, 0, 0.18) 55%, rgba(255, 255, 255, 0.11) 69.5%, rgba(0, 0, 0, 0.651) 85%, rgba(74, 74, 74, 0.651) 100%);
 }
 
+.gradient-background2{
+  background: linear-gradient(to right, rgb(255, 255, 255), #3498db);
+}
+
 .numberspeak-bg {
   background-image: url(/letnumberspeak.svg);
   background-size: cover;

@@ -13,7 +13,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       {/* Centering the Modal */}
       <div className="fixed inset-0 flex items-center justify-center p-4 px-8">
         {/* Modal Panel */}
-        <DialogPanel className="w-full max-w-md transform overflow-hidden rounded-[20px] bg-white p-6 shadow-xl transition-all data-[enter]:scale-100 data-[leave]:scale-95">
+        <DialogPanel className="w-full max-w-md transform overflow-hidden rounded-[20px] gradient-background2 p-6 shadow-xl transition-all data-[enter]:scale-100 data-[leave]:scale-95">
           <div className="flex items-center justify-end">
             <DialogTitle as="h3" className="text-lg hidden font-medium leading-6 text-gray-900">
               <ExclamationTriangleIcon className="h-6 w-6 text-yellow-500 inline-block mr-2" />

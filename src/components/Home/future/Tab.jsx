@@ -1,7 +1,7 @@
-const talentLayerImg = '/features/talent-layer.png';
-const techImg = '/features/tech.png';
-const financialImg = '/features/financial.png';
-const supportImg = '/features/support.png';
+const talentLayerImg = '/features/talent-layer.jpg';
+const techImg = '/features/tech.jpg';
+const financialImg = '/features/financial.jpg';
+const supportImg = '/features/support.jpg';
 
 export const tabs = [
   {
@@ -9,7 +9,7 @@ export const tabs = [
     title: 'Talent',
     content: (
       <div className="w-full flex flex-col-reverse md:flex-row items-center gap-[32px]">
-        <div className="w-full h-full sm:h-[450px] ">
+        <div className="w-full h-full ">
           <img src={talentLayerImg} alt="" className="w-full h-full rounded-2xl" />
         </div>
         <div className="w-full h-full flex-col justify-start items-start gap-4 flex">
@@ -26,7 +26,7 @@ export const tabs = [
     title: 'Tech',
     content: (
       <div className="w-full flex flex-col-reverse md:flex-row items-center gap-[32px]">
-        <div className="w-full h-full sm:h-[450px] ">
+        <div className="w-full h-full">
           <img src={techImg} alt="" className="w-full h-full rounded-2xl" />
         </div>
         <div className="w-full h-full flex-col justify-start items-start gap-4 flex">
@@ -46,7 +46,7 @@ export const tabs = [
     title: 'Financial',
     content: (
       <div className="w-full flex flex-col-reverse md:flex-row items-center gap-[32px]">
-        <div className="w-full h-full sm:h-[450px] ">
+        <div className="w-full h-full">
           <img src={financialImg} alt="" className="w-full h-full rounded-2xl" />
         </div>
         <div className="w-full h-full flex-col justify-start items-start gap-4 flex">
@@ -66,7 +66,7 @@ export const tabs = [
     title: 'Support',
     content: (
       <div className="w-full flex flex-col-reverse md:flex-row items-center gap-[32px]">
-        <div className="w-full h-full sm:h-[450px] ">
+        <div className="w-full h-full">
           <img src={supportImg} alt="" className="w-full h-full rounded-2xl" />
         </div>
         <div className="w-full h-full flex-col justify-start items-start gap-4 flex">
