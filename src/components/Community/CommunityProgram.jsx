@@ -19,7 +19,7 @@ export default function CommunityProgram() {
           <h2 className="!text-3xl md:!text-4xl boxed_round_fonts font-bold mb-4">
             Community <span className="gradient-text">Programs</span>
           </h2>
-          <p className="sub-heading mb-4 ">Ready to be a Web3 pioneer? Optimus PRO offers a suite of programs designed to empower you.</p>
+          <p className="sub-heading mb-4 !font-bold">Ready to be a Web3 pioneer? Optimus PRO offers a suite of programs designed to empower you.</p>
           <p className="body-text mb-4">Optimus PRO Community Programs are crafted with you in mind. We believe collaboration in our community is essential to drive innovation, adoption, and growth in Web3.</p>
           <p className="body-text mb-4">Our programs are specifically designed with the goal of encouraging collaboration in the Optimus PRO Ecosystem and to provide opportunities for learning, growth, earning and networking.</p>
           <p className="text-white body-text leading-7">Join the right program for you:</p>
