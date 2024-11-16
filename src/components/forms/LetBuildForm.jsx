@@ -9,26 +9,26 @@ export default function LetBuildForm() {
       <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Founders, join the waitlist for exclusive updates on co-building opportunities, events, and networking.</p>
       <form className="space-y-2">
         <div className="relative flex flex-col gap-1">
-          <label className="block text-gray-700">Email</label>
+          <label className="block text-gray-700 !text-base sub-heading">Email</label>
           <MdEmail className="w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px]" />
-          <input type="email" placeholder="Enter email address" className="w-full pl-10 px-3 py-2 border bg-[#dadada] text-gray-700 rounded-full focus:outline-none focus:ring focus:border-blue-300" />
+          <input type="email" placeholder="Enter email address" className="w-full !text-base sub-heading pl-10 px-3 py-2 border bg-[#dadada] text-gray-700 rounded-full focus:outline-none focus:ring focus:border-blue-300" />
         </div>
 
         {/* Telegram Username Field */}
         <div className="relative flex flex-col gap-1">
-          <label className="block text-gray-700">Telegram Username</label>
+          <label className="block text-gray-700 !text-base sub-heading">Telegram Username</label>
           <FaTelegram className="w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px]" />
-          <input type="text" placeholder="Enter telegram username" className="w-full pl-10 px-3 py-2 border bg-[#dadada] rounded-full focus:outline-none focus:ring focus:border-blue-300" />
+          <input type="text" placeholder="Enter telegram username" className="w-full !text-base sub-heading pl-10 px-3 py-2 border bg-[#dadada] rounded-full focus:outline-none focus:ring focus:border-blue-300" />
         </div>
 
         {/* LinkedIn Profile Field */}
         <div className="relative flex flex-col gap-1">
-          <label className="block text-gray-700">LinkedIn Profile</label>
+          <label className="block text-gray-700 !text-base sub-heading">LinkedIn Profile</label>
           <FaLinkedinIn className="w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px]" />
-          <input type="url" placeholder="Enter linkedin profile" className="w-full pl-10 px-3 py-2 border bg-[#dadada] rounded-full focus:outline-none focus:ring focus:border-blue-300" />
+          <input type="url" placeholder="Enter linkedin profile" className="w-full !text-base sub-heading pl-10 px-3 py-2 border bg-[#dadada] rounded-full focus:outline-none focus:ring focus:border-blue-300" />
         </div>
         <div className="w-full pt-5">
-          <button type="submit" className="w-full text-lg px-4 py-3 gradient-background text-white rounded-full">
+          <button type="submit" className="w-full sub-heading !text-lg px-4 py-3 gradient-background text-white rounded-full">
             Submit
           </button>
         </div>
