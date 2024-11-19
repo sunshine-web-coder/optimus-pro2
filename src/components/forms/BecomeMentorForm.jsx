@@ -4,6 +4,7 @@ import InputField from '../custom/InputField';
 import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
+import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
 
 export default function BecomeMentorForm() {
   const initialState = {
@@ -26,11 +27,16 @@ export default function BecomeMentorForm() {
     setLoading(true);
 
     try {
-      // Your API call here
+      // Simulating an API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      alert('Form submitted successfully!');
+
+      // Use reusable Toast component for success message
+      ToastNotification.success('Form submitted successfully!');
+
       resetForm();
     } catch (error) {
+      // Use reusable Toast component for error message
+      ToastNotification.error('Error submitting form. Please try again.');
       console.error('Error submitting form:', error);
     } finally {
       setLoading(false);

@@ -1,7 +1,8 @@
-// components/LetBuildForm.js
 import { MdEmail } from 'react-icons/md';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaTelegram } from 'react-icons/fa';
+import { ToastContainer } from 'react-toastify';
+import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
 import useFormValidation from '../hooks/useFormValidation';
 import validationRules from '../utils/validationRules';
 import InputField from '../custom/InputField';
@@ -30,19 +31,27 @@ export default function LetBuildForm() {
     setLoading(true);
 
     try {
-      // Your API call here
+      // Simulating an API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      alert('Form submitted successfully!');
+
+      // Use reusable Toast component for success message
+      ToastNotification.success('Form submitted successfully!');
+
       resetForm();
     } catch (error) {
+      // Use reusable Toast component for error message
+      ToastNotification.error('Error submitting form. Please try again.');
       console.error('Error submitting form:', error);
     } finally {
       setLoading(false);
     }
   };
-
+ 
   return (
     <div>
+      {/* Toast Container to show notifications */}
+      <ToastContainer />
+
       <h2 className="text-center font-['BoxedRound'] text-3xl">Let's Build</h2>
       <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Founders, join the waitlist for exclusive updates on co-building opportunities, events, and networking.</p>
 
@@ -62,7 +71,7 @@ export default function LetBuildForm() {
 
         <InputField
           label="LinkedIn Profile"
-          type="url"
+          type="text"
           placeholder="Enter linkedin profile"
           icon={FaLinkedinIn}
           value={formData.linkedinProfile}

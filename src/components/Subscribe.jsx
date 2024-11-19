@@ -53,7 +53,7 @@ export default function Subscribe() {
               onChange={handleChange}
               name="email"
               className="text-neutral-400 bg-white rounded-[48px] h-[60px] sm:h-[73px] pl-8 pr-8 sm:pr-[220px] py-3 text-xl font-normal font-['Advent Pro']"
-              iconClassName="w-[24px] h-[24px] top-[25px] left-[13px]" 
+              iconClassName="w-[24px] h-[24px] top-[24px] left-[13px]" 
             />
             <div className="absolute right-[6px] top-[6px]">
               <SubmitButton

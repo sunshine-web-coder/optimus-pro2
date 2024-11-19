@@ -59,14 +59,14 @@ export const validationRules = {
     return '';
   },
 
-  url: value => {
-    try {
-      new URL(value);
-      return '';
-    } catch {
-      return 'Please enter a valid URL';
-    }
-  },
+  // url: value => {
+  //   try {
+  //     new URL(value);
+  //     return '';
+  //   } catch {
+  //     return 'Please enter a valid URL';
+  //   }
+  // },
 
   name: value => {
     if (!value) return 'Name is required';
