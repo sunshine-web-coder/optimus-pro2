@@ -9,7 +9,7 @@ export default function TheNews() {
     <div className="pt-[50px] sm:pt-[100px]">
       <div className="relative w-[100vw] flex flex-col items-center px-0 sm:px-10">
         <img src="/blog.png" alt="" className="absolute sm:top-[-90px] w-[100%] h-full md:h-[950px] z-10" />
-        <div className="text-white font-['AdventPro-Bold'] text-5xl z-[9999999] mt-[60px]">Blog</div>
+        <div className="text-white font-['AdventPro-Bold'] text-5xl z-20 mt-[60px]">Blog</div>
 
         <div className="w-full px-4 sm:px-20 mt-10 md:mt-20 relative z-20">
           <div className="flex flex-col md:flex-row gap-5">

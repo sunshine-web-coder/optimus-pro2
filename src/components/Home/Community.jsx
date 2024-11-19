@@ -1,14 +1,22 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Modal from '../modals/Modal';
 import LetBuildForm from '../forms/LetBuildForm';
+import BecomeMentorForm from '../forms/BecomeMentorForm';
+import IwantInForm from '../forms/IwantInForm';
 
 export default function Community() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Function to open and close the modal
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
+  // State for each modal
+  const [isLetBuildFormOpen, setIsLetBuildFormOpen] = useState(false);
+  const [isBecomeMentorFormOpen, setIsBecomeMentorFormOpen] = useState(false);
+  const [isIwantInFormOpen, setIsIwantInFormOpen] = useState(false);
+ 
+  // Handlers for opening/closing each modal
+  const handleOpenLetBuildForm = () => setIsLetBuildFormOpen(true);
+  const handleCloseLetBuildForm = () => setIsLetBuildFormOpen(false);
+  const handleOpenBecomeMentorForm = () => setIsBecomeMentorFormOpen(true);
+  const handleCloseBecomeMentorForm = () => setIsBecomeMentorFormOpen(false);
+  const handleOpenIwantInForm = () => setIsIwantInFormOpen(true);
+  const handleCloseIwantInForm = () => setIsIwantInFormOpen(false);
 
   return (
     <div className="px-4 lg:px-10 py-20 lg:py-0 flex flex-col justify-center items-center relative rounded-3xl">
@@ -54,7 +62,7 @@ export default function Community() {
                   </div>
                   <button
                     className="flex items-center !text-xl body-text justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
-                    onClick={handleOpenModal}
+                    onClick={handleOpenLetBuildForm}
                   >
                     <span>Let’s Build</span>
                     <img
@@ -72,9 +80,9 @@ export default function Community() {
                   <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">
                     Make a transformative impact with your expertise by guiding ambitious founders to achieve the impossible, and contribute to shaping the future of Web3.
                   </div>
-                  <Link
-                    to=""
+                  <button
                     className="flex items-center body-text !text-xl justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
+                    onClick={handleOpenBecomeMentorForm}
                   >
                     <span>Become a Mentor</span>
                     <img
@@ -82,7 +90,7 @@ export default function Community() {
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&"
                       className="shrink-0 self-start w-4 aspect-square"
                     />
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-full max-md:ml-0">
@@ -105,9 +113,9 @@ export default function Community() {
                   <div className="mt-4 body-text tracking-tight text-center md:text-left text-violet-100">
                     Access exclusive early investment opportunities in Web3, discover and connect with high-potential 100X startups before everyone else.
                   </div>
-                  <Link
-                    to=""
+                  <button
                     className="flex items-center body-text !text-xl justify-center md:justify-start gap-2.5 mt-8 border border-sky-500 border-solid rounded-[48px] max-md:px-5 h-[50px] p-4 md:max-w-max"
+                    onClick={handleOpenIwantInForm}
                   >
                     <span>I want in</span>
                     <img
@@ -115,15 +123,21 @@ export default function Community() {
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442ab98e742ebbc3c30ebf7fbc692a872603fbae4cb4d51b2f74d36e5964f69?apiKey=cad8efe434314a3791073499160712c6&"
                       className="shrink-0 self-start w-4 aspect-square"
                     />
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+      <Modal isOpen={isLetBuildFormOpen} onClose={handleCloseLetBuildForm}>
         <LetBuildForm />
+      </Modal>
+      <Modal isOpen={isBecomeMentorFormOpen} onClose={handleCloseBecomeMentorForm}>
+        <BecomeMentorForm />
+      </Modal>
+      <Modal isOpen={isIwantInFormOpen} onClose={handleCloseIwantInForm}>
+        <IwantInForm />
       </Modal>
     </div>
   );

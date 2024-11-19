@@ -6,7 +6,7 @@ import Hero from '../components/Community/hero/Hero';
 import JoinCommunity from '../components/Community/JoinCommunity';
 import LetConnect from '../components/generalSections/LetConnect';
 import ProFraction from '../components/Community/ProFraction';
-import Subscribe from '../components/generalSections/Subscribe';
+import Subscribe from '../components/Subscribe';
 import InTheNews from '../components/generalSections/TheNews';
 import { Element, scroller } from 'react-scroll';
 

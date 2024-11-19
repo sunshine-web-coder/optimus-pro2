@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { DiscordIcon, FacebookIcon, InstagramIcon, LinkedlnIcon, TelegramIcon, TikTokIcon, TwitterIcon, YoutubeIcon } from '../svgicon';
+import { socialData } from '../data/social';
 
 export default function FollowUs() {
   return (
@@ -16,30 +16,11 @@ export default function FollowUs() {
           </div>
           {/* Button */}
           <div className="flex flex-wrap gap-4 md:gap-10 justify-center mt-10 w-[100%] ">
-            <Link href="">
-              <TwitterIcon />
-            </Link>
-            <Link href="">
-              <LinkedlnIcon />
-            </Link>
-            <Link href="">
-              <TelegramIcon />
-            </Link>
-            <Link href="">
-              <DiscordIcon />
-            </Link>
-            <Link href="">
-              <FacebookIcon />
-            </Link>
-            <Link href="">
-              <InstagramIcon />
-            </Link>
-            <Link href="">
-              <TikTokIcon />
-            </Link>
-            <Link href="">
-              <YoutubeIcon />
-            </Link>
+            {socialData.map((social, index) => (
+              <Link to={social.link} key={index} target="_blank">
+                <social.icon />
+              </Link>
+            ))}
           </div>
         </div>
       </div>

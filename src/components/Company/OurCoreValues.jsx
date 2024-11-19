@@ -53,7 +53,7 @@ export default function OurCoreValues() {
         <div className="">
           <h3 className="gradient-text boxed_round_fonts text-center mb-6">Our Core Values</h3>
           <p className="text-white text-center sub-heading">
-            Our core values are the guiding forces behind our actions, decisions, and interactions. They shape our culture, inspire our innovation, and foster a sense of community and collaboration. By living these values, we desire to script an extraordinary story; unavailing each chapter with
+            Our values drive innovation, community, and collaboration, shaping an extraordinary journey with
             <br />
             <span className="gradient-text">EPIC ACT</span>{' '}
           </p>

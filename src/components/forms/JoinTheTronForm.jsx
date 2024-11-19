@@ -1,23 +1,27 @@
-// components/LetBuildForm.js
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaTelegram } from 'react-icons/fa';
-import useFormValidation from '../hooks/useFormValidation';
-import validationRules from '../utils/validationRules';
+import { FiMapPin, FiGlobe } from 'react-icons/fi';
+import { HiUser } from "react-icons/hi2";
 import InputField from '../custom/InputField';
 import SubmitButton from '../custom/SubmitButton';
+import validationRules from '../utils/validationRules';
+import useFormValidation from '../hooks/useFormValidation';
 
-export default function LetBuildForm() {
+export default function JoinTheTronForm() {
   const initialState = {
+    name: '',
+    city: '',
+    country: '',
     email: '',
-    telegramUsername: '',
-    linkedinProfile: ''
+    telegramUsername: ''
   };
 
   const { formData, errors, loading, setLoading, handleChange, validateForm, resetForm } = useFormValidation(initialState, {
+    name: validationRules.name,
+    city: validationRules.city,
+    country: validationRules.country,
     email: validationRules.email,
-    telegramUsername: validationRules.telegramUsername,
-    linkedinProfile: validationRules.linkedinProfile
+    telegramUsername: validationRules.telegramUsername
   });
 
   const handleSubmit = async e => {
@@ -43,10 +47,17 @@ export default function LetBuildForm() {
 
   return (
     <div>
-      <h2 className="text-center font-['BoxedRound'] text-3xl">Let's Build</h2>
-      <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Founders, join the waitlist for exclusive updates on co-building opportunities, events, and networking.</p>
-
+      <h2 className="text-center font-['BoxedRound'] w-full text-xl">
+        ✓ TRONS → <span className="text-lg">Join Now</span>
+      </h2>
+      <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Sign up to get updates on our upcoming in-person meetups near you.</p>
       <form className="space-y-2" onSubmit={handleSubmit}>
+      <InputField label="Name" type="text" placeholder="Enter your name" icon={HiUser} value={formData.name} onChange={handleChange} name="name" error={errors.name} />
+
+        <InputField label="City" type="text" placeholder="Enter your city" icon={FiMapPin} value={formData.city} onChange={handleChange} name="city" error={errors.city} />
+
+        <InputField label="Country" type="text" placeholder="Enter your country" icon={FiGlobe} value={formData.country} onChange={handleChange} name="country" error={errors.country} />
+
         <InputField label="Email" type="email" placeholder="Enter email address" icon={MdEmail} value={formData.email} onChange={handleChange} name="email" error={errors.email} />
 
         <InputField
@@ -59,20 +70,8 @@ export default function LetBuildForm() {
           name="telegramUsername"
           error={errors.telegramUsername}
         />
-
-        <InputField
-          label="LinkedIn Profile"
-          type="url"
-          placeholder="Enter linkedin profile"
-          icon={FaLinkedinIn}
-          value={formData.linkedinProfile}
-          onChange={handleChange}
-          name="linkedinProfile"
-          error={errors.linkedinProfile}
-        />
-
         <div className="w-full pt-5">
-          <SubmitButton label="Let's Build" loading={loading} />
+          <SubmitButton label="Keep Me Updated" loading={loading} />
         </div>
       </form>
     </div>

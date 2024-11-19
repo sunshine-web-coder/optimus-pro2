@@ -10,7 +10,7 @@ export default function Banner() {
             <span className="text-white boxed_round_fonts">Optimus </span>
             <span className="gradient-text boxed_round_fonts">PRO Blog</span>
           </div>
-          <div className="text-white p-1 px-2  text-base font-normal font-['Advent Pro'] leading-normal max-w-max bg-white/5 rounded-xl">Advance reports from our intensive blog???</div>
+          <div className="text-white p-1 px-2 mt-3  text-base font-normal font-['Advent Pro'] leading-normal max-w-max bg-white/5 rounded-xl">Exploring ideas, uncovering opportunities, and shaping the future of Web3.</div>
         </div>
       </div>
     </div>

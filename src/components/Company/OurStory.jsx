@@ -7,7 +7,7 @@ export default function OurStory() {
       <div className="custom-container relative z-10">
         <div className="">
           <h3 className="gradient-text boxed_round_fonts text-center mb-6">Our Story</h3>
-          <p className="text-white text-center sub-heading">A group of blockchain visionaries, bound by shared passion and unwavering vision, coming from humble beginnings to build a dynamic community that's shaping the future of the internet.uture</p>
+          <p className="text-white text-center sub-heading">A group of ambitious individuals pushing beyond boundaries through groundbreaking innovations.</p>
         </div>
         <div className="mt-10 flex flex-col md:flex-row items-center md:items-start text-white">
           <div className="w-full z-10 relative md:w-1/2 mb-8 md:mb-0">
@@ -15,18 +15,20 @@ export default function OurStory() {
           </div>
           <div className="w-full flex flex-col gap-5 body-text md:w-1/2 md:pl-4">
             <p className="body-text">
-              <span className="gradient-text">Founded in 2020,</span> our journey began with an unwavering passion for Web3 technologies and a relentless drive to solve real-world problems we experienced firsthand - <span className="gradient-text">scams, pumps & dumps, hacks, and more.</span> These
-              problems still pervade the Web3 ecosystem today and have cost users hundreds of billions of dollars. Since our inception, we've carefully assembled a team of dedicated and talented individuals bound by a shared purpose: to harness the power of Web3 to create a better future for all.
+              Founded in <span className="gradient-text">2020</span>, our journey began with an unwavering passion for Web3 technologies and a relentless drive to solve the challenges we faced
+              firsthand: <span className="gradient-text">exit-scams, rug pulls, pump-&-dump schemes, unfair token distributions, security vulnerabilities</span> and{' '}
+              <span className="gradient-text">market manipulations</span> which have cost users <span className="gradient-text">billions</span> of dollars.
             </p>
 
             <p className="body-text">
-              We've always imagined a Web3 community where every member, regardless of their background, expertise and experience, has a voice, where innovation is borderless, and where trust and security are the foundation. <span className="gradient-text">Our vision</span> is to build an inclusive,
-              community-driven and secure ecosystem where everyone can collaborate, build, and thrive together, actualizing a decentralized future that's fair, open, and empowering for all.
+              These problems still persist, indicating the need for urgent solutions and this has fueled <span className="gradient-text">our mission</span> to empower the{' '}
+              <span className="gradient-text">next generation</span> of Web3 <span className="gradient-text">innovators, creators</span> and <span className="gradient-text">builders</span> to shape
+              the future of the internet through <span className="gradient-text">bold, groundbreaking ideas</span> that redefine what's possible.
             </p>
 
             <p className="body-text">
-              Optimus PRO is a decentralized collective, fueled by a shared passion for blockchain and Web3 technologies. <span className="gradient-text">Our mission</span> is to empower the next generation of Web3 innovators and builders, fostering innovation and collaboration within the Web3
-              ecosystem, and driving the development of new solutions and applications that shape the future of the internet.
+              At Optimus PRO, <span className="gradient-text">we envision </span>an <span className="gradient-text">inclusive</span>, <span className="gradient-text">community-driven</span> and <span className="gradient-text">secure</span> ecosystem where <span className="gradient-text">everyone</span> can <span className="gradient-text">collaborate, build</span>, and <span className="gradient-text">thrive</span> together, actualizing a <span className="gradient-text">decentralized</span> future that's
+              <span className="gradient-text">fair, open,</span> and <span className="gradient-text">empowering</span> for all.
             </p>
           </div>
         </div>

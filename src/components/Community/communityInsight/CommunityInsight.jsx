@@ -12,24 +12,16 @@ export default function CommunityInsight() {
   const link = [
     {
       label: 'All',
-      slug: ''
+      slug: '/blog'
     },
     {
       label: 'News',
-      slug: ''
+      slug: '/blog'
     },
     {
-      label: 'Blog & Article',
-      slug: ''
+      label: 'Blog',
+      slug: '/blog'
     },
-    {
-      label: 'Case studies',
-      slug: ''
-    },
-    {
-      label: 'Research',
-      slug: ''
-    }
   ];
   const settings = {
     dots: true,
@@ -71,11 +63,11 @@ export default function CommunityInsight() {
       <div className="w-[530.69px] h-[648.20px] absolute -left-[20%] -bottom-[100%] origin-top-left rotate-[-75deg] bg-sky-600/20 rounded-[100px] blur-[240px]" />
       <div className="w-[530.69px] h-[648.20px] absolute right-[15%] -bottom-[100%] origin-top-left rotate-[-75deg] bg-sky-600/40 rounded-[100px] blur-[240px]" />
 
-      <div className="mx-auto max-w-[451px] min-h-[126px] relative z-10">
+      <div className="px-5 mx-auto max-w-[651px] min-h-[126px] relative z-10">
         <div className="boxed_round_fonts text-center bg-clip-text bg-[linear-gradient(120deg,#0080FF_56.64%,#00D9D9_76.56%)] leading-[70px] max-md:text-4xl max-md:leading-[50px]">
           <span className="relative text-white whitespace-normal md:whitespace-nowrap z-[999999]">Community</span> <span className="relative gradient-text">Insight</span>
         </div>
-        <p className="text-center sub-heading text-white mt-2">Stay informed with our latest news and community-driven resources tailored to empower your journey</p>
+        <p className="text-center sub-heading text-white mt-2 sm:mt-4">Stay informed with our latest news and community-driven resources.</p>
       </div>
       <div className="pl-[16px] pr-[16px] sm:pr-0 lg:pl-[120px] relative z-10 flex justify-between flex-col lg:flex-row gap-16 lg:gap-24 mt-10">
         <div className="w-full pt-[40px] md:pt-[75px]">

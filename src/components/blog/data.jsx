@@ -3,12 +3,22 @@ export const blogPosts = [
     id: 1,
     title: 'Optimus PRO Club: Higher Returns and Rewards!',
     content: (
-      <>
+      <div className="body-text flex flex-col gap-6">
         <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
-        <div>
-          <strong>Special Offer:</strong> Join now and get additional benefits!
-        </div>
-      </>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+      </div>
     ),
     author: 'OptimusPro',
     date: 'August 3, 2024',
@@ -20,14 +30,22 @@ export const blogPosts = [
     id: 2,
     title: 'Optimus PRO FIRST MOVERS Campaign is Here - How to take part for 120% APY',
     content: (
-      <>
-        <p>Working remotely has its challenges. Here are the top 10 tips to stay productive and maintain a work-life balance while working from home.</p>
-        <ul className="list-disc pl-10 mt-2">
-          <li>Set a regular schedule</li>
-          <li>Create a dedicated workspace</li>
-          <li>Take regular breaks</li>
-        </ul>
-      </>
+      <div className="body-text flex flex-col gap-6">
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+        <p>Optimus PRO Club is a major referral campaign and a vital part of the Cookie First Movers 60-day marathon. By inviting friends to join, you can earn 3% of their staked value while they enjoy an AP.</p>
+      </div>
     ),
     author: 'OptimusPro',
     date: 'June 2, 2024',

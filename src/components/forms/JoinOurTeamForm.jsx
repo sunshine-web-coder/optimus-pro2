@@ -1,23 +1,24 @@
-// components/LetBuildForm.js
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedinIn } from 'react-icons/fa6';
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { FaTelegram } from 'react-icons/fa';
-import useFormValidation from '../hooks/useFormValidation';
-import validationRules from '../utils/validationRules';
 import InputField from '../custom/InputField';
 import SubmitButton from '../custom/SubmitButton';
+import validationRules from '../utils/validationRules';
+import useFormValidation from '../hooks/useFormValidation';
 
-export default function LetBuildForm() {
+export default function JoinOurTeamForm() {
   const initialState = {
     email: '',
     telegramUsername: '',
-    linkedinProfile: ''
+    linkedinProfile: '',
+    twitterUsername: ''
   };
 
   const { formData, errors, loading, setLoading, handleChange, validateForm, resetForm } = useFormValidation(initialState, {
     email: validationRules.email,
     telegramUsername: validationRules.telegramUsername,
-    linkedinProfile: validationRules.linkedinProfile
+    linkedinProfile: validationRules.linkedinProfile,
+    twitterUsername: validationRules.twitterUsername
   });
 
   const handleSubmit = async e => {
@@ -43,9 +44,10 @@ export default function LetBuildForm() {
 
   return (
     <div>
-      <h2 className="text-center font-['BoxedRound'] text-3xl">Let's Build</h2>
-      <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Founders, join the waitlist for exclusive updates on co-building opportunities, events, and networking.</p>
-
+      <h2 className="text-center font-['BoxedRound'] text-3xl">Join Our Team</h2>
+      <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">
+        At <b>Optimus PRO</b>, we are looking at building a <b>rock-solid</b> team of <b>“A-players”</b>. Think you're a right fit? Join the waitlist. ✅
+      </p>
       <form className="space-y-2" onSubmit={handleSubmit}>
         <InputField label="Email" type="email" placeholder="Enter email address" icon={MdEmail} value={formData.email} onChange={handleChange} name="email" error={errors.email} />
 
@@ -71,8 +73,19 @@ export default function LetBuildForm() {
           error={errors.linkedinProfile}
         />
 
+        <InputField
+          label="X (Formerly Twitter) Username"
+          type="text"
+          placeholder="Enter X (Formerly Twitter) username"
+          icon={FaTwitter}
+          value={formData.twitterUsername}
+          onChange={handleChange}
+          name="twitterUsername"
+          error={errors.twitterUsername}
+        />
+
         <div className="w-full pt-5">
-          <SubmitButton label="Let's Build" loading={loading} />
+          <SubmitButton label="Count Me In" loading={loading} />
         </div>
       </form>
     </div>

@@ -2,7 +2,7 @@ import Banner from '../components/blog/Banner';
 import BlogPost from '../components/blog/BlogPost';
 import Trending from '../components/blog/Trending';
 import LetConnect from "../components/generalSections/LetConnect";
-import Subscribe from '../components/generalSections/Subscribe';
+import Subscribe from '../components/Subscribe';
 
 export default function Blog() {
   return (

@@ -10,20 +10,20 @@ export default function Footer() {
           {/** open */}
           <div className="flex flex-col gap-4 w-[100%] md:w-[30%]">
             <div className="flex gap-2 self-start text-base text-cyan-500">
-              <img src="/logo.png" className="w-[170px] sm:w-[200px]"  />
+              <img src="/logo.png" className="w-[170px] sm:w-[200px]" />
             </div>
             <div className="mt-2.5 w-full text-xl leading-8 text-stone-50">
-              Optimus PRO is a community-driven Web3 ecosystem that is built on the foundation of trust, security, and transparency. It’s a decentralized space co-built by stakeholders like you, where
-              every voice matters.
+              Optimus PRO is a community-driven Web3 ecosystem that is built on the foundation of trust, security, and transparency. It’s a decentralized space co-built by stake
+              <span className="circle-text">hodlers</span> ✅like you, where every voice matters.
             </div>
             <div className="flex flex-wrap gap-5 mt-2.5">
               {socialData.map((social, index) => (
                 <Link to={social.link} key={index} target="_blank">
-                  <img loading="lazy" src={social.icon} className="w-10" />
+                  <social.icon />
                 </Link>
               ))}
             </div>
-            <div className="mt-1.5 text-base leading-6 text-white">hello@optimuspro.io</div>
+            <a href="mailto:hello@optimuspro.io" className="mt-1.5 text-base leading-6 text-white">hello@optimuspro.io</a>
           </div>
           {/** end */}
 
