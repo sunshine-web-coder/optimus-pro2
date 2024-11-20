@@ -43,7 +43,9 @@ export default function Subscribe() {
 
   return (
     <div className="px-4 sm:px-20 mt-10 sm:mt-28 mb-10 sm:mb-28">
-      <ToastContainer />
+      <div className="p-3 relative">
+        <ToastContainer />
+      </div>
       <div className="bg-gradient-to-r from-[#1975FF] min-h-[357px] py-[64px] to-[#33A9FF] flex flex-col items-center justify-center p-5 pt-10 md:p-10 rounded-2xl relative w-[100%]">
         <div className="mx-auto max-w-[833px] min-h-[116px] flex-col justify-start items-center gap-4 inline-flex">
           <div className="self-stretch text-center text-white text-3xl font-bold font-['BoxedRound'] leading-[44px]">Enter Your E-mail Address and Stay Updated on Our Journey</div>
@@ -60,14 +62,14 @@ export default function Subscribe() {
               value={formData.email}
               onChange={handleChange}
               name="email"
-              className="text-neutral-400 bg-white rounded-[48px] h-[60px] sm:h-[73px] pl-8 pr-8 sm:pr-[220px] py-3 text-xl font-normal font-['Advent Pro']"
-              iconClassName="w-[24px] h-[24px] top-[24px] left-[13px]" 
+              className="text-neutral-400 bg-white rounded-[48px] h-[60px] sm:h-[73px] pl-8 pr-[130px] sm:pr-[220px] py-3 text-xl font-normal font-['Advent Pro']"
+              iconClassName="w-[24px] h-[24px] top-[17px] sm:top-[24px] left-[13px]"
             />
-            <div className="absolute right-[6px] top-[6px]">
+            <div className="absolute right-[6px] top-[8px] sm:top-[6px]">
               <SubmitButton
                 label="Subscribe Now"
                 loading={loading}
-                className="right-0 text-center px-6 py-4 bg-gradient-to-br from-sky-500 to-cyan-500 rounded-[48px] justify-center sm:justify-start items-center gap-2.5 flex"
+                className="right-0 !text-sm text-center sm:px-6 !py-3 sm:!py-4 bg-gradient-to-br from-sky-500 to-cyan-500 rounded-[48px] justify-center sm:justify-start items-center gap-2.5 flex"
               />
             </div>
             {errors.email && <p className="text-red-500 max-w-max p-[2px] px-3 mt-2 bg-white rounded">{errors.email}*</p>}
