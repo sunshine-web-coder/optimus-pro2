@@ -3,6 +3,8 @@ import InputField from './custom/InputField';
 import useFormValidation from './hooks/useFormValidation';
 import validationRules from './utils/validationRules';
 import SubmitButton from './custom/SubmitButton';
+import { ToastContainer } from 'react-toastify';
+import ToastNotification from '../components/hooks/ToastNotification'; // Import reusable Toast component
 
 export default function Subscribe() {
   const initialState = {
@@ -23,11 +25,16 @@ export default function Subscribe() {
     setLoading(true);
 
     try {
-      // Your API call here
+      // Simulating an API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      alert('Form submitted successfully!');
+
+      // Use reusable Toast component for success message
+      ToastNotification.success('Form submitted successfully!');
+
       resetForm();
     } catch (error) {
+      // Use reusable Toast component for error message
+      ToastNotification.error('Error submitting form. Please try again.');
       console.error('Error submitting form:', error);
     } finally {
       setLoading(false);
@@ -36,6 +43,7 @@ export default function Subscribe() {
 
   return (
     <div className="px-4 sm:px-20 mt-10 sm:mt-28 mb-10 sm:mb-28">
+      <ToastContainer />
       <div className="bg-gradient-to-r from-[#1975FF] min-h-[357px] py-[64px] to-[#33A9FF] flex flex-col items-center justify-center p-5 pt-10 md:p-10 rounded-2xl relative w-[100%]">
         <div className="mx-auto max-w-[833px] min-h-[116px] flex-col justify-start items-center gap-4 inline-flex">
           <div className="self-stretch text-center text-white text-3xl font-bold font-['BoxedRound'] leading-[44px]">Enter Your E-mail Address and Stay Updated on Our Journey</div>

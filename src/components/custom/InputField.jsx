@@ -13,7 +13,7 @@ export default function InputField({
       {label && <label className="block text-gray-700 !text-base sub-heading">{label}</label>}
       {Icon && (
         <Icon
-          className={`w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[10px] ${iconClassName}`}
+          className={`w-[18px] h-[18px] text-gray-700 absolute top-[40px] left-[15px] ${iconClassName}`}
         />
       )}
       <input
