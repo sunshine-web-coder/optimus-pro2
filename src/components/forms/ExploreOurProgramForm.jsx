@@ -7,6 +7,7 @@ import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
 import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
+import { ToastContainer } from 'react-toastify';
 
 export default function ExploreOurProgramForm() {
   const initialState = {
@@ -53,6 +54,8 @@ export default function ExploreOurProgramForm() {
 
   return (
     <div>
+      <ToastContainer />
+      
       <h2 className="text-center font-['BoxedRound'] w-full text-3xl">Get Onboard!</h2>
       <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Sign up for updates on our upcoming programs and get the opportunity to be one of the first to be onboarded.</p>
       <form className="space-y-2" onSubmit={handleSubmit}>

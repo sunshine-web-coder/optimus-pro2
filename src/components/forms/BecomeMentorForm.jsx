@@ -5,6 +5,7 @@ import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
 import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
+import { ToastContainer } from 'react-toastify';
 
 export default function BecomeMentorForm() {
   const initialState = {
@@ -44,6 +45,8 @@ export default function BecomeMentorForm() {
   };
   return (
     <div>
+      <ToastContainer />
+
       <h2 className="text-center font-['BoxedRound'] text-3xl">Become a Mentor</h2>
       <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Join our waitlist to share your expertise and guide the next generation of innovators.</p>
       <form className="space-y-2" onSubmit={handleSubmit}>

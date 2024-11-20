@@ -7,6 +7,7 @@ import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
 import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
+import { ToastContainer } from 'react-toastify';
 
 export default function JoinTheTronForm() {
   const initialState = {
@@ -53,6 +54,8 @@ export default function JoinTheTronForm() {
 
   return (
     <div>
+      <ToastContainer />
+      
       <h2 className="text-center font-['BoxedRound'] w-full text-xl">
         ✓ TRONS → <span className="text-lg">Join Now</span>
       </h2>

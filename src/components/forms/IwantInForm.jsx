@@ -5,6 +5,7 @@ import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
 import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
+import { ToastContainer } from 'react-toastify';
 
 export default function IwantInForm() {
   const initialState = {
@@ -45,6 +46,8 @@ export default function IwantInForm() {
 
   return (
     <div>
+      <ToastContainer />
+      
       <h2 className="text-center font-['BoxedRound'] text-3xl">I Want in</h2>
       <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">Join our waitlist for exclusive updates on investment opportunities and events.</p>
       <form className="space-y-2" onSubmit={handleSubmit}>

@@ -6,6 +6,7 @@ import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
 import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
+import { ToastContainer } from 'react-toastify';
 
 export default function HeckathonForm() {
   const initialState = {
@@ -48,6 +49,8 @@ export default function HeckathonForm() {
 
   return (
     <div>
+      <ToastContainer />
+      
       <h2 className="text-center font-['BoxedRound'] text-xl">
         ✓ HACKATHONS → <span className="text-lg">Coming Soon</span>
       </h2>

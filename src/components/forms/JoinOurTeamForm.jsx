@@ -6,6 +6,7 @@ import SubmitButton from '../custom/SubmitButton';
 import validationRules from '../utils/validationRules';
 import useFormValidation from '../hooks/useFormValidation';
 import ToastNotification from '../../components/hooks/ToastNotification'; // Import reusable Toast component
+import { ToastContainer } from 'react-toastify';
 
 export default function JoinOurTeamForm() {
   const initialState = {
@@ -50,6 +51,8 @@ export default function JoinOurTeamForm() {
 
   return (
     <div>
+      <ToastContainer />
+      
       <h2 className="text-center font-['BoxedRound'] text-3xl">Join Our Team</h2>
       <p className="text-gray-700 text-center !text-lg mt-3 sub-heading mb-4">
         At <b>Optimus PRO</b>, we are looking at building a <b>rock-solid</b> team of <b>“A-players”</b>. Think you're a right fit? Join the waitlist. ✅
